@@ -1,21 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Austin Mutter's Portfolio</title>
+    <title>Austin Mutter Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/png" href="assets/icon.png">
+    <link rel="icon" type="image/png" href="assets/icon.png" />
 </head>
-<body>
-<header class="topbar">
-    <h1 class="title">Austin Mutter's Portfolio</h1>
-</header>
 
+<body>
+<!-- Desktop: always-visible left menu -->
+<aside class="menu menu--desktop" aria-label="Project index">
+    <div class="menuTitle">Austin Mutter</div>
+
+    <div class="menuBody">
+        <div class="menuList" id="desktopMenuList"></div>
+
+        <!-- bottom-aligned row like the reference -->
+        <div class="menuFooter menuFooter--desktop">
+            <div class="menuFooterRow">Index</div>
+        </div>
+    </div>
+</aside>
+
+<!-- Mobile: full-screen overlay menu -->
+<div class="menuOverlay" id="menuOverlay" aria-hidden="true">
+    <div class="menu menu--mobile" role="dialog" aria-label="Project index">
+        <div class="menuTitle">Austin Mutter</div>
+        <div class="menuList" id="mobileMenuList"></div>
+
+        <div class="menuFooter">
+            <button id="mobileIndexBtn" class="menuFooterBtn" type="button">Index</button>
+            <button id="mobileCloseBtn" class="menuFooterBtn menuFooterBtn--x" type="button" aria-label="Close">
+                ×
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Stage -->
 <main id="stage" class="stage" aria-label="Layer stage"></main>
 
-<footer class="bottombar" aria-label="Index tracker">
-    <div id="tracker" class="tracker"></div>
+<!-- Bottom bar -->
+<footer class="bottombar" aria-label="Controls">
+    <button id="openIndexBtn" class="indexBtn indexBtn--mobileOnly" type="button">Index</button>
+    <div id="tracker" class="tracker" aria-label="Index tracker"></div>
 </footer>
 
 <script src="app.js" type="module"></script>

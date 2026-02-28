@@ -1,0 +1,4 @@
+[
+  { "id": "project-a", "name": "Project A", "src": "projects/project-a.json" },
+  { "id": "project-b", "name": "Project B", "src": "projects/project-b.json" }
+]

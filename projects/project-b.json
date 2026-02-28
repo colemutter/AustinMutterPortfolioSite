@@ -1,0 +1,8 @@
+[
+  { "type": "image", "src": "assets/beer_spa3.png" , "scale": 1.1, "fit": "contain" },
+  { "type": "image", "src": "assets/model_pic.png", "scale": 0.9, "fit": "contain" },
+  { "type": "image", "src": "assets/plants_night.png" , "scale": 0.3, "fit": "contain" },
+  { "type": "video", "src": "assets/video_for_website.mp4", "poster": "assets/icon.png" , "scale": 0.65, "fit": "contain" },
+  { "type": "image", "src": "assets/space_theater.png" , "scale": 1.3, "fit": "contain" },
+  { "type": "image", "src": "assets/surf_shack.png" , "scale": 0.65, "fit": "contain",  "x": 0.1, "y": -0.05  }
+]
